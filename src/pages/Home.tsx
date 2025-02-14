@@ -11,62 +11,48 @@ import Services from "./Services";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-200 text-gray-900 dark:from-gray-800 dark:to-gray-900 dark:text-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-200 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-white">
       {/* Navbar */}
       <Navbar />
-
+      
       {/* Hero Section */}
-      <div className="flex flex-col items-center justify-center py-16 text-center">
-        <h1 className="mb-6 text-6xl font-extrabold text-blue-800 dark:text-blue-300">
-          AFYA ON THE GO
-        </h1>
-        <h3 className="mb-6 text-2xl text-gray-700 dark:text-gray-300">
-          Your Trusted Digital Healthcare Partner
-        </h3>
-        <Button className="transform rounded-xl bg-blue-600 px-6 py-3 text-white shadow-lg transition-transform hover:scale-105 hover:bg-blue-700">
+      <div className="flex flex-col items-center justify-center text-center py-16 mt-16">
+        <h1 className="text-6xl font-extrabold mb-6 text-blue-800 dark:text-blue-300">AFYA ON THE GO</h1>
+        <h3 className="text-2xl mb-6 text-gray-700 dark:text-gray-300">Your Trusted Digital Healthcare Partner</h3>
+        <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl shadow-lg transition-transform transform hover:scale-105">
           Get Started
         </Button>
       </div>
 
       {/* Image Slideshow */}
-      <div className="mt-10 flex h-[500px] w-full justify-center">
-        <Carousel className="overflow-hidden rounded-xl border-2 border-blue-400 shadow-xl">
-          <img
-            src={slideshow1}
-            alt="slideshow1"
-            className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
-          />
-          <img
-            src={slideshow2}
-            alt="slideshow2"
-            className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
-          />
-          <img
-            src={slideshow3}
-            alt="slideshow3"
-            className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
-          />
+      <div className="flex justify-center mt-10 h-[500px] w-full">
+        <Carousel className="rounded-xl shadow-xl border-2 border-blue-400 overflow-hidden">
+          <img src={slideshow1} alt="slideshow1" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+          <img src={slideshow2} alt="slideshow2" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+          <img src={slideshow3} alt="slideshow3" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
         </Carousel>
       </div>
 
       {/* About Section */}
-      <section className="my-16">
+      <section id="about" className="my-16 scroll-mt-20">
         <About />
       </section>
+
       {/* Services Section */}
-      <section className="my-16">
+      <section id="services" className="my-16 scroll-mt-20">
         <Services />
       </section>
 
       {/* Contact Section */}
-      <section className="my-16">
+      <section id="contact" className="my-16 scroll-mt-20">
         <Contact />
       </section>
 
       {/* Footer */}
-      <footer className="bg-blue-800 py-4 text-center text-white">
+      <footer className="bg-blue-800 text-white py-4 text-center">
         &copy; {new Date().getFullYear()} Afya On The Go. All rights reserved.
       </footer>
     </div>
   );
 }
+
