@@ -11,32 +11,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - **Nurses and Healthcare Practitioners**: To onboard by submitting necessary documentation for verification. Upon approval, they can create profiles and offer services.
 - **Patients/Clients**: To register, upload medical records, and connect with qualified healthcare professionals.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The app will reload if you make edits and display any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production in the `build` folder. React is bundled and optimized for performance.
-
-### `npm run eject`
-
-**Note:** This is irreversible and provides full control over configuration files.
-
-## Deployment
-
-Refer to the [Create React App deployment guide](https://facebook.github.io/create-react-app/docs/deployment) for instructions on deploying the application.
-
 ## Technologies Used
 
 - React.js
